@@ -4,7 +4,9 @@ public class WSIB_Week2_2_2 {
     
     public Scanner sc = new Scanner(System.in);
     public String nama;
-    public void main(String[] args) {
+
+
+    public void Loop(){
         System.out.println("CAFE CERIA" + "\n" +
         "ANEKA MINUMAN" + "\n" +
         "-----------------" + "\n" +
@@ -17,6 +19,10 @@ public class WSIB_Week2_2_2 {
 
         System.out.print("Masukan Nama Pembeli : ");
         nama = sc.nextLine();
+        LoopScanner();
+    }
+
+    public void LoopScanner(){
         System.out.print("Silahkan Masukan Pilihan Anda : ");
         int pilihan = sc.nextInt();
         
@@ -41,7 +47,11 @@ public class WSIB_Week2_2_2 {
                 break;
             default:
                 System.out.println("Pilihan tidak tersedia");
+                LoopScanner();
                 break;
         }
+    }
+    public void main(String[] args) {
+        Loop();
     }
 }

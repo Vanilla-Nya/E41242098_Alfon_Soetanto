@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class WSIB_Week2_2_1 {
     public double harga1, harga2, harga3, harga4, harga5, total;
     public String nama;
-    
     public void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Masukan Nama Anda = ");
@@ -23,24 +22,19 @@ public class WSIB_Week2_2_1 {
 
         total = harga1 + harga2 + harga3 + harga4 + harga5;
 
-        System.out.print("Kharisma Agung Plazza <KAP>" + "\n" +
-        "Promo Belanja Berhadiah" + "\n" +
-        "Khusus Pembelian 5 Barang Pertama" + "\n" +
-        "Dengan Harga Minimum Rp. 10000,00" + "\n" +
-        "--------------------------------------------" + "\n" +
-        "Harga Barang ke-1: Rp. " + harga1 + "\n" +
-        "Harga Barang ke-2: Rp. " + harga2 + "\n" +
-        "Harga Barang ke-3: Rp. " + harga3+ "\n" +
-        "Harga Barang ke-4: Rp. " + harga4+ "\n" +
-        "Harga Barang ke-5: Rp. " +harga5+ "\n" +
-        "Total Harga Pembelian Atas nama " + nama + "Denagn Total " + total + "\n" + 
-        "\n" + 
-        "Selamat...." + "\n" +
-        "Anda Mendapat Hadiah 1 Buah Mug Cantik" + "\n" +
-        "\n" +
-        "--------------------------------------------" + "\n" +
-        "Terimakasih" + "\n" +
-        "Anda Sudah Belanja di Kharisma Agung Plazza" + "\n"
-        );
+        
+        String[] HasilAkhir = {"Kharisma Agung Plazza <KAP>" , "Promo Belanja Berhadiah" , "Khusus Pembelian 5 Barang Pertama" , "Dengan Harga Minimum Rp. 10000,00" , "--------------------------------------------" , "Harga Barang ke-1: Rp. " + harga1 , "Harga Barang ke-2: Rp. " + harga2 , "Harga Barang ke-3: Rp. " + harga3 , "Harga Barang ke-4: Rp. " + harga4 , "Harga Barang ke-5: Rp. " + harga5 , "Total Harga Pembelian Atas nama " + nama + "Denagn Total " + total , "Selamat...." , "Anda Mendapat Hadiah 1 Buah Mug Cantik" , "--------------------------------------------" , "Terimakasih" , "Anda Sudah Belanja di Kharisma Agung Plazza"};
+        String[] HasilAkhirTidakdapat = {"Kharisma Agung Plazza <KAP>" , "Promo Belanja Berhadiah" , "Khusus Pembelian 5 Barang Pertama" , "Dengan Harga Minimum Rp. 10000,00" , "--------------------------------------------" , "Harga Barang ke-1: Rp. " + harga1 , "Harga Barang ke-2: Rp. " + harga2 , "Harga Barang ke-3: Rp. " + harga3 , "Harga Barang ke-4: Rp. " + harga4 , "Harga Barang ke-5: Rp. " + harga5 , "Total Harga Pembelian Atas nama " + nama + "Denagn Total " + total , "Selamat...." , "Anda Tidak Mendapatkan Hadiah" , "--------------------------------------------" , "Terimakasih" , "Anda Sudah Belanja di Kharisma Agung Plazza"};
+        
+        if (total == 100000) {
+            for (int i = 0; i < HasilAkhir.length; i++) {
+                System.out.println(HasilAkhir[i]);
+            }
+        } else {
+            for (int i = 0; i < HasilAkhirTidakdapat.length; i++) {
+                System.out.println(HasilAkhirTidakdapat[i]);
+            }
+        }
+
     }
 }
