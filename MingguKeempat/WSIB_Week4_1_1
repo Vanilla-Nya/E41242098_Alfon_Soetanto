@@ -1,0 +1,45 @@
+1. Penjelasan tentang Algoritma Bubble Sort
+Algoritma Bubble Sort adalah salah satu algoritma pengurutan yang sederhana dan mudah dipahami. Prinsip dasar dari algoritma ini adalah membandingkan dua elemen yang bersebelahan, dan jika elemen pertama lebih besar daripada elemen kedua, maka kedua elemen tersebut ditukar posisi. Proses ini terus dilakukan berulang-ulang untuk setiap pasangan elemen yang berdekatan hingga seluruh daftar elemen terurut.
+
+Berikut adalah langkah-langkah umum dalam Bubble Sort:
+
+Bandingkan elemen pertama dengan elemen kedua. Jika elemen pertama lebih besar, tukar posisi kedua elemen tersebut.
+Lanjutkan membandingkan elemen kedua dengan elemen ketiga, dan seterusnya hingga elemen terakhir dalam daftar.
+Setelah satu iterasi selesai, elemen terbesar akan "menggelembung" ke posisi paling akhir.
+Proses ini diulang untuk elemen-elemen yang tersisa (tidak termasuk elemen yang sudah terurut), dan diulang terus hingga seluruh elemen terurut.
+Contoh sederhana: Misalkan kita memiliki daftar angka [5, 2, 9, 1, 5, 6].
+
+Pada langkah pertama, kita bandingkan angka 5 dengan 2 dan tukar mereka (sehingga menjadi [2, 5, 9, 1, 5, 6]).
+Lanjutkan membandingkan elemen-elemen yang berdekatan, terus tukar jika diperlukan.
+Setelah beberapa iterasi, daftar akan menjadi terurut dengan benar.
+Bubble Sort cukup mudah diimplementasikan tetapi memiliki efisiensi yang rendah dibandingkan algoritma pengurutan lain seperti Quick Sort atau Merge Sort, terutama pada data yang besar, karena memiliki kompleksitas waktu O(n²).
+
+Contoh Bubble Sort
+Misalkan kita memiliki daftar angka yang belum terurut:
+[5, 2, 9, 1, 5, 6]
+
+Langkah-langkah dalam Bubble Sort:
+
+Iterasi pertama:
+
+Bandingkan 5 dan 2, tukar karena 5 > 2 → [2, 5, 9, 1, 5, 6]
+Bandingkan 5 dan 9, tidak perlu tukar.
+Bandingkan 9 dan 1, tukar karena 9 > 1 → [2, 5, 1, 9, 5, 6]
+Bandingkan 9 dan 5, tukar karena 9 > 5 → [2, 5, 1, 5, 9, 6]
+Bandingkan 9 dan 6, tukar karena 9 > 6 → [2, 5, 1, 5, 6, 9]
+Setelah iterasi pertama, angka terbesar (9) sudah berada di posisi terakhir.
+
+Iterasi kedua:
+
+Bandingkan 2 dan 5, tidak perlu tukar.
+Bandingkan 5 dan 1, tukar karena 5 > 1 → [2, 1, 5, 5, 6, 9]
+Bandingkan 5 dan 5, tidak perlu tukar.
+Bandingkan 5 dan 6, tidak perlu tukar.
+Setelah iterasi kedua, angka 6 sudah berada di posisi kedua terakhir.
+
+Iterasi ketiga:
+
+Bandingkan 2 dan 1, tukar karena 2 > 1 → [1, 2, 5, 5, 6, 9]
+Bandingkan 2 dan 5, tidak perlu tukar.
+Bandingkan 5 dan 5, tidak perlu tukar.
+Setelah tiga iterasi, daftar sudah terurut: [1, 2, 5, 5, 6, 9]

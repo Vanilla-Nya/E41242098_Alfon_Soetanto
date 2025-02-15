@@ -1,3 +1,4 @@
+package MingguKedua;
 class Person {
     public String Name;
     public int Age;

@@ -1,0 +1,31 @@
+Resume tentang Binary Search
+Pengertian Binary Search: Binary Search adalah algoritma pencarian yang sangat efisien, digunakan untuk menemukan elemen dalam daftar yang terurut. Dengan menggunakan Divide and Conquer, algoritma ini membagi daftar menjadi dua bagian dan mencari elemen di bagian yang relevan, mengurangi jumlah elemen yang harus diperiksa secara signifikan.
+
+Algoritma Binary Search: Untuk menggunakan Binary Search, daftar yang dicari harus sudah dalam keadaan terurut. Langkah-langkah dalam algoritma Binary Search adalah sebagai berikut:
+
+Tentukan posisi tengah (mid) dari daftar yang akan dicari.
+mid = (low + high) / 2 (di mana low adalah indeks pertama dan high adalah indeks terakhir daftar).
+Bandingkan nilai yang dicari dengan elemen di posisi tengah (mid).
+Jika elemen yang dicari sama dengan elemen di posisi tengah, pencarian selesai dan kembalikan indeks tersebut.
+Jika elemen yang dicari lebih kecil dari elemen di posisi tengah, maka nilai yang dicari hanya dapat berada di bagian kiri daftar. Setel high ke mid - 1.
+Jika elemen yang dicari lebih besar dari elemen di posisi tengah, maka nilai yang dicari hanya dapat berada di bagian kanan daftar. Setel low ke mid + 1.
+Ulangi proses ini dengan daftar yang sudah dibagi sampai nilai yang dicari ditemukan atau hingga daftar tidak memiliki elemen lagi (jika low > high, pencarian gagal).
+Langkah-langkah secara lebih rinci:
+
+Tentukan indeks pertama (low) dan indeks terakhir (high) dari daftar.
+Hitung posisi tengah mid.
+Bandingkan nilai yang dicari dengan nilai di posisi tengah (mid).
+Sesuaikan batas pencarian (low dan high) berdasarkan hasil perbandingan dan ulangi hingga ditemukan atau tidak ada lagi elemen yang tersisa.
+Contoh: Misalkan kita memiliki daftar terurut [1, 3, 5, 7, 9, 11, 13, 15, 17] dan kita ingin mencari angka 9.
+
+Tentukan low = 0 dan high = 8.
+Hitung mid = (0 + 8) / 2 = 4, dan elemen di posisi mid adalah 9.
+Bandingkan nilai yang dicari (9) dengan nilai di posisi mid (9). Karena keduanya sama, maka pencarian selesai dan kita dapat mengembalikan indeks 4 sebagai hasilnya.
+Kelebihan Binary Search:
+
+Algoritma ini memiliki kompleksitas waktu O(log n), yang jauh lebih cepat dibandingkan dengan algoritma pencarian lain seperti Sequential Search yang memiliki kompleksitas O(n).
+Sangat efisien untuk daftar yang sangat besar jika daftar tersebut sudah terurut.
+Kekurangan:
+
+Binary Search hanya dapat digunakan pada daftar yang sudah terurut. Jika daftar tidak terurut, harus dilakukan pengurutan terlebih dahulu, yang dapat mempengaruhi efisiensi.
+Memerlukan lebih banyak perhitungan untuk menemukan posisi tengah, tetapi keuntungan dari pengurangan ruang pencarian jauh lebih besar.

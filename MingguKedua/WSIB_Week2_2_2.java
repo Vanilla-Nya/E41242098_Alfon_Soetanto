@@ -1,3 +1,4 @@
+package MingguKedua;
 import java.util.Scanner;
 
 public class WSIB_Week2_2_2 {

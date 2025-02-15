@@ -1,0 +1,61 @@
+2. Resume tentang Selection Sort
+Pengertian Selection Sort: Selection Sort adalah algoritma pengurutan yang bekerja dengan cara menemukan elemen terkecil (atau terbesar, tergantung pada pengurutan yang diinginkan) dalam daftar dan menukarnya dengan elemen pertama. Proses ini diulang untuk elemen-elemen yang tersisa, sehingga setelah beberapa iterasi, daftar akan terurut.
+
+Algoritma Selection Sort:
+
+Mulai dari elemen pertama dalam daftar, anggap elemen tersebut sebagai yang terkecil.
+Bandingkan elemen yang telah dipilih dengan elemen-elemen lainnya untuk menemukan elemen terkecil.
+Setelah menemukan elemen terkecil, tukar posisi elemen terkecil tersebut dengan elemen pertama.
+Lanjutkan dengan elemen kedua dan ulangi langkah-langkah di atas untuk sisa elemen lainnya.
+Proses ini diulang hingga seluruh daftar terurut.
+Langkah-langkah dalam Selection Sort (untuk urutan naik):
+
+Pilih elemen pertama sebagai elemen terkecil.
+Bandingkan elemen tersebut dengan semua elemen berikutnya.
+Temukan elemen terkecil dan tukar dengan elemen pertama.
+Lanjutkan untuk elemen kedua, temukan elemen terkecil dari sisa daftar, dan tukar.
+Ulangi proses ini hingga seluruh daftar terurut.
+Contoh: Misalkan kita memiliki daftar angka [64, 25, 12, 22, 11].
+
+Cari elemen terkecil dari seluruh daftar, yaitu 11, lalu tukar dengan elemen pertama.
+Setelah iterasi pertama, daftar menjadi [11, 25, 12, 22, 64].
+Cari elemen terkecil dari sisa daftar ([25, 12, 22, 64]), yaitu 12, lalu tukar dengan elemen kedua.
+Ulangi proses hingga seluruh elemen terurut.
+Kelebihan Selection Sort:
+
+Mudah dipahami dan diimplementasikan.
+Tidak memerlukan memori tambahan karena dilakukan in-place (tanpa array tambahan).
+Berguna untuk dataset kecil hingga menengah.
+Kekurangan:
+
+Memiliki kompleksitas waktu O(n²), sehingga tidak efisien untuk data yang sangat besar.
+Itulah penjelasan tentang Selection Sort.
+
+
+Contoh Selection Sort
+Sekarang kita lihat contoh Selection Sort dengan daftar yang sama:
+[5, 2, 9, 1, 5, 6]
+
+Langkah-langkah dalam Selection Sort:
+
+Iterasi pertama:
+
+Cari elemen terkecil dari seluruh daftar ([5, 2, 9, 1, 5, 6]). Elemen terkecil adalah 1.
+Tukar elemen pertama (5) dengan elemen terkecil (1) → [1, 2, 9, 5, 5, 6]
+Iterasi kedua:
+
+Cari elemen terkecil dari sisa daftar ([2, 9, 5, 5, 6]). Elemen terkecil adalah 2.
+Tidak perlu tukar karena elemen kedua sudah 2 → [1, 2, 9, 5, 5, 6]
+Iterasi ketiga:
+
+Cari elemen terkecil dari sisa daftar ([9, 5, 5, 6]). Elemen terkecil adalah 5.
+Tukar elemen ketiga (9) dengan elemen terkecil (5) → [1, 2, 5, 9, 5, 6]
+Iterasi keempat:
+
+Cari elemen terkecil dari sisa daftar ([9, 5, 6]). Elemen terkecil adalah 5.
+Tukar elemen keempat (9) dengan elemen terkecil (5) → [1, 2, 5, 5, 9, 6]
+Iterasi kelima:
+
+Cari elemen terkecil dari sisa daftar ([9, 6]). Elemen terkecil adalah 6.
+Tukar elemen kelima (9) dengan elemen terkecil (6) → [1, 2, 5, 5, 6, 9]
+Setelah lima iterasi, daftar sudah terurut: [1, 2, 5, 5, 6, 9]

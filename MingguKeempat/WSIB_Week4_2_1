@@ -1,0 +1,23 @@
+Penjelasan tentang Algoritma Sequential Search
+Sequential Search (atau pencarian berurutan) adalah salah satu metode pencarian yang paling sederhana. Algoritma ini bekerja dengan cara memeriksa setiap elemen dalam sebuah daftar secara berurutan, satu per satu, untuk menemukan elemen yang dicari.
+
+Langkah-langkah dalam Sequential Search adalah sebagai berikut:
+
+Mulailah dari elemen pertama dalam daftar.
+Bandingkan elemen tersebut dengan nilai yang dicari.
+Jika elemen yang dicari ditemukan, kembalikan posisi elemen tersebut.
+Jika elemen yang dicari belum ditemukan, lanjutkan ke elemen berikutnya dan ulangi proses ini.
+Jika seluruh elemen dalam daftar sudah diperiksa dan tidak ada yang cocok dengan elemen yang dicari, maka pencarian dianggap gagal.
+Kelebihan dari Sequential Search adalah:
+
+Mudah diimplementasikan dan tidak memerlukan daftar yang terurut.
+Bisa digunakan pada daftar yang tidak terurut sekalipun.
+Kekurangan:
+
+Memiliki kompleksitas waktu O(n), yang berarti semakin besar ukuran daftar, semakin lama waktu pencarian.
+Tidak efisien untuk dataset besar, terutama jika dibandingkan dengan algoritma pencarian yang lebih canggih seperti Binary Search.
+Contoh: Misalnya kita ingin mencari angka 5 dalam daftar [2, 3, 5, 7, 11].
+
+Bandingkan 2 dengan 5, tidak cocok.
+Bandingkan 3 dengan 5, tidak cocok.
+Bandingkan 5 dengan 5, cocok! Maka pencarian selesai.

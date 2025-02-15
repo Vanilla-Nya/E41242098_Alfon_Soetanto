@@ -1,3 +1,4 @@
+package MingguKedua;
 public class ManagingPeapole {
     public static void main(String[] args) {
         Person p1 = new Person("Arial", 37);
