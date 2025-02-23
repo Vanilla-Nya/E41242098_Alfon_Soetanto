@@ -1,4 +1,4 @@
-
+package MingguKeempat;
 
 public class WSIB_Week4_Contoh {
     
