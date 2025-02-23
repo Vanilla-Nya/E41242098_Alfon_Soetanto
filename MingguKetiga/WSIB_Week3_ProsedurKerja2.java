@@ -1,3 +1,5 @@
+package MingguKetiga;
+
 public class WSIB_Week3_ProsedurKerja2 {
         public static void main(String[] args) {
         int[][] angka = {

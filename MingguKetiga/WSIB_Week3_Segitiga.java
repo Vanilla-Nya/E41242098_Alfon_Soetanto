@@ -1,4 +1,4 @@
-package MinnguKetiga;
+package MingguKetiga;
 
 import java.util.Scanner;
 

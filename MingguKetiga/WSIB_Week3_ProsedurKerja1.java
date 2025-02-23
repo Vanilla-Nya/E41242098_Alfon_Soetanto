@@ -1,3 +1,5 @@
+package MingguKetiga;
+
 public class WSIB_Week3_ProsedurKerja1 {
      public static void main(String[] args) {
         // TODO code application logic here

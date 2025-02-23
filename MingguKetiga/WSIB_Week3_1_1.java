@@ -1,4 +1,5 @@
-package MinnguKetiga;
+package MingguKetiga;
+
 import java.util.Scanner;
 
 public class WSIB_Week3_1_1 {

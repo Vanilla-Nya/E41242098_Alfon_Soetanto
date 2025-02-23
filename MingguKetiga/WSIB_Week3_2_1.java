@@ -1,4 +1,4 @@
-package MinnguKetiga;
+package MingguKetiga;
 
 public class WSIB_Week3_2_1 {
     public static void main(String[] args) {
